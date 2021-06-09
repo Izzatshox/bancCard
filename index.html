@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><b>Kredit summasi</b></p>
+    <input type="text" id="summaIn" value="100000000">
+    <input type="range" id="summaR" oninput="qiymat('summaR','summaIn')" min="1000000" max="100000000" step="100000" value="0">
+    <hr>
+    <p><b>Kredit muddati</b></p>
+    <input type="text" id="muddatIn" value="10">
+    <input type="range" id="muddatR" oninput="qiymat('muddatR','muddatIn')"  min="1" max="20" step="1" value="0">
+    <hr>
+    <p><b>Boshlang'ich to'lov</b></p>
+    <input type="text" id="startIn" value="10000000">
+    <input type="range" id="startR" oninput="qiymat('startR','startIn')" min="1000000" max="100000000" step="100000" value="0">
+    <hr>
+    <p><b>Kredit foizi</b></p>
+    <select>
+        <option value="0">Bankni tanlang</option>
+        <option value="22">Ipoteka bank - 22%</option>
+        <option value="20">Buyuk Ipak bank - 20%</option>
+        <option value="24">Poytaxt bank - 24%</option>
+    </select>
+    <hr>
+    <button onclick="hisobla()">Hisoblash</button>
+    <hr>
+    <button class="btn"></button>
+    <hr>
+    <h3>Kredit jadvali</h3>
+    <table border="1" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Oy</th>
+                <th>To'lov so'm</th>
+                <th>Qarz so'm</th>
+                <th>Foiz, so'm</th>
+                <th>Qoldiq, so'm</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>

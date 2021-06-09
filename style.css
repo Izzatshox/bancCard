@@ -1,0 +1,26 @@
+.btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border:0;
+    background: unset;
+    cursor: pointer;
+}
+.btn::after,
+.btn::before {
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: #000;
+    transform: rotate(45deg);
+}
+.btn::after{
+    transform: rotate(-45deg);
+}
